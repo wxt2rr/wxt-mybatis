@@ -16,6 +16,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -137,6 +138,8 @@ public class SimpleExecutor implements Executor {
         List<ParameterMapping> parameterMappings = parameterMappingTokenHandler.getParameterMappings();
 
         BoundSql boundSql = new BoundSql(parseSql, parameterMappings);
+
+        HashMap
         return boundSql;
 
     }
