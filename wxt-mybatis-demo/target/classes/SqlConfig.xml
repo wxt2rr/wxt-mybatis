@@ -1,0 +1,12 @@
+<configuration>
+    <!-- 数据源配置信息 -->
+    <dataSource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://master.mysql.account-center.local.chuangkit.com:3306/account_center"/>
+        <property name="username" value="local_account_center_ro"/>
+        <property name="password" value="Oem3fbsbn2ZFS3Z0aOvXn1yMW0IruSGX"/>
+    </dataSource>
+
+    <!-- mapper配置文件路径 -->
+    <mapper resource="src/main/resources/mapper"/>
+</configuration>

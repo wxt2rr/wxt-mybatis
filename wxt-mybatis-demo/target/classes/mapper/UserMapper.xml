@@ -1,0 +1,11 @@
+<mapper namespace="com.wangxt.mybatis.core.demo.dao.UserDao">
+
+    <select id="queryList" resultType="com.wangxt.mybatis.core.demo.pojo.UserDo" >
+        select * from reg_user
+    </select>
+
+    <select id="queryUser" resultType="com.wangxt.mybatis.core.demo.pojo.UserDo" paramterType="com.wangxt.mybatis.core.demo.pojo.UserDo">
+        select * from reg_user where user_id = #{userId}
+    </select>
+
+</mapper>
